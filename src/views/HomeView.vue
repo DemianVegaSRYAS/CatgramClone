@@ -13,8 +13,9 @@
     <div class="content__wrapp">
       <Left/>
       <!-- <div class="leftcontainer">Left</div> -->
-      <div class="corecontainer">Core</div>
-      <div class="rightcontainer">Right</div>
+      <!-- <div class="corecontainer">Core</div> -->
+      <Core/>
+      <Right/>
     </div>
   </div>
 </template>
@@ -23,21 +24,30 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import SearchBar from '@/components/SearchBar.vue'
 import Left from '@/components/Left.vue'
+import Right from '@/components/Right.vue'
+import Core from '@/components/Core.vue'
 export default {
   name: 'HomeView',
   components: {
     HelloWorld,
     SearchBar,
     Left,
+    Right,
+    Core,
   }
 }
 </script>
 <style scooped>
+*{
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
 body{
   background-color: rgb(239, 239, 239);
   max-width: 100vw;
   margin: 0;
   padding: 0;
+  max-height: 100vh;
 }
 .hero__wrapp{
   background-color: #000;
