@@ -9,19 +9,32 @@
             distinctio illo temporibus rerum officiis, excepturi 
             facere corporis est eum molestiae dolorem laudantium 
             mollitia ullam maiores.</p>
-        <div class="Likes">Likes</div>
+            <div class="LikeComment_Wrap">
+                <LikeButton/>
+                <p class="Comments">💬0 </p>
+            </div>
+        <!-- <div class="Likes">
+            <button @click="count++">
+                🤍  {{ count }}
+            </button>
+        </div> -->
+
     </div>
     
 </div>
 </template>
 <script>
 import Namep from '@/components/Namep.vue'
+import LikeButton from '@/components/LikeButton.vue'
 export default {
     name: 'Core',
     components:{
         Namep,
-    },data(){
+        LikeButton,
+                },
+    data(){
         return{
+            // count:0,
             images:[
                 {url:'https://data.whicdn.com/images/357279301/original.jpg'},
                 {url:'https://assets-global.website-files.com/61bbcec54a71bb14e2611c3a/61bbcec54a71bb9a1b612216_Can%20cats%20have%20Benadryl_Hero.jpg'},
@@ -36,7 +49,7 @@ export default {
 
 
 </script>
-<style scooped>
+<style scoped>
 .Core{
     color: white;
     background-color: rgb(0, 0, 0);
@@ -61,19 +74,47 @@ export default {
     background-color: rgba(103, 103, 103, 0.466);
     margin: 1em;
     display: grid;
+
+    /* justify-items: start; */
+
+
+
     grid-template-rows: 50px auto auto 50px;
     border-radius: 10px;
     padding-top: 1em;
     /* overflow-y: scroll; */
 }
-.Likes {
+/* .Likes {
     margin: 0;
-}
+    text-align: start;
+} */
 p{
     margin: 1em;
 }
 .descrp{
     text-align: justify;
     font-style: oblique;
+}
+/* button{
+    width: 5em;
+    height: 3em;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0 5px;
+} */
+.LikeComment_Wrap{
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+}
+.Comments{
+    font-size: 2em;
+    margin: 0;
+    filter: invert(50%);
+    cursor: pointer;
 }
 </style>

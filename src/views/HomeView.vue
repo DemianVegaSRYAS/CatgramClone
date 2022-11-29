@@ -55,7 +55,7 @@ body{
   color: white;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  justify-items: center;
+  justify-items: left;
   align-items: center;
 }
 .content__wrapp{
@@ -96,5 +96,7 @@ body{
   background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/883af5d2-b2c0-412a-a8a3-8a3324c30914/d5ohyoq-6107c225-a442-40bc-b907-5ec4c788effb.png/v1/fill/w_539,h_724,strp/business_cat_vector_by_baronius_d5ohyoq-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzI0IiwicGF0aCI6IlwvZlwvODgzYWY1ZDItYjJjMC00MTJhLWE4YTMtOGEzMzI0YzMwOTE0XC9kNW9oeW9xLTYxMDdjMjI1LWE0NDItNDBiYy1iOTA3LTVlYzRjNzg4ZWZmYi5wbmciLCJ3aWR0aCI6Ijw9NTM5In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.SC85pFDKFuNDhy1TULcqFBAd8NxiLSINCKq8kK4jwzE');
   background-size: cover;
   background-position: center;
+  justify-self: right;
+  margin-right: 30%;
 }
 </style>
